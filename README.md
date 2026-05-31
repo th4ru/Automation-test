@@ -68,6 +68,6 @@ package.json
 
 ## Author
 
-Tharushi Noragalla
-University of Jaffna
+Tharushi Noragalla - 
+University of Jaffna - 
 Computer Science Undergraduate
