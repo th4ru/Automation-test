@@ -1,7 +1,7 @@
 {
   "name": "safora-playwright-automation",
   "version": "1.0.0",
-  "description": "QA Engineering Internship Assignment",
+  "description": "QA Engineering Internship",
   "scripts": {
     "test": "playwright test",
     "headed": "playwright test --headed",
