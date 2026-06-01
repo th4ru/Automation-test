@@ -11,7 +11,8 @@ test('Verify Required Field Validation', async ({ page }) => {
 
     const emailField = page.locator('input[name="email"]');
 
-    await expect(emailField).toBeVisible();
+    const validationMessage = await emailField.evaluate(el => el.validationMessage);
+    expect(validationMessage).not.toBe('');
 });
 
 test('Verify Invalid Email Validation', async ({ page }) => {
