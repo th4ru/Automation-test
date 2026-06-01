@@ -1,16 +1,16 @@
-const { defineConfig } = require('@playwright/test');
+const { defineConfig, devices } = require('@playwright/test');
 
 module.exports = defineConfig({
   testDir: './tests',
-
+  timeout: 30_000,
   use: {
-    browserName: 'chromium',
+    baseURL: 'https://safora.se/en/',
     headless: true,
     screenshot: 'only-on-failure',
-    video: 'retain-on-failure'
+    video: 'retain-on-failure',
   },
-
-  reporter: [
-    ['html']
-  ]
+  projects: [
+    { name: 'chromium', use: { ...devices['Desktop Chrome'] } }
+  ],
+  reporter: [['html', { open: 'never' }]],
 });

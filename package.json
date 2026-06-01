@@ -10,7 +10,7 @@
   "devDependencies": {
     "@playwright/test": "^1.60.0"
   },
-  "main": "playwrite.config.js",
+  "main": "playwright.config.js",
   "directories": {
     "test": "tests"
   },
